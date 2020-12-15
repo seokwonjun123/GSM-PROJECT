@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-style: 'Nanum Gothic', sans-serif;
+}
+header{
+    background-color: #FCF2FF;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-name{
+    float: right;
+    margin-top: 17%;
+    color: #b718e7;
+}
+
+li{
+    list-style: none;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    width: 456px;
+}
+
+#login{
+    padding-top:20px;
+}
+
+#class{
+    margin-left: 1.5vw;
+    padding-top:20px;
+}
+
+a{
+    text-decoration-line: none;
+    color:black;
+}
+
+/*header -끝- */
+
+#month{
+    text-align:center;
+    padding-top:20px;
+}
+
+main {
+    background-color: #F7DDFF;
+}
+h4{
+    padding-top:5px;
+    margin-bottom: 5px;;
+}
+hr{
+    width:462px; 
+    border: 1px solid #707070;
+    margin-top:5px;  
+    margin-bottom: 5px;
+}
+p{
+    padding-bottom: 5px;
+}
+#Copyright{
+   display: inline-block;
+   margin-left: 210px;
+}
+#explain {
+    position: relative;
+    top: -20px;
+   display: inline-block;
+   margin-left: 200px;
+
+}
+#dis{
+    display: inline-block;
+    margin-left: 450px;
+    margin-top: 10px;
+    margin-right:275px;   
+}
+
+footer{
+    background-color: #DDB5E9;
+    height: 85px;
+}
