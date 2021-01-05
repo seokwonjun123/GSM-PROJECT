@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-style: 'Nanum Gothic', sans-serif;
+}
+body{
+    overflow-x : hidden;
+}
+header{
+    background-color: #FCF2FF;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-name{
+    float: right;
+    margin-top: 17%;
+    color: #b718e7;
+}
+
+li{
+    list-style: none;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    width: 456px;
+}
+
+#login{
+    padding-top:20px;
+}
+
+#class{
+    margin-left: 1.5vw;
+    padding-top:20px;
+}
+
+a{
+    text-decoration-line: none;
+    color:black;
+}
+
+/*header -끝- */
+table {
+    width: 850px;
+    margin-left: 350px;
+    empty-cells: show;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.pagination{
+    position: relative;
+    left: 1150px;
+}
+.search_bbs{
+    float: right;
+    margin-top: -60px;
+    margin-right: 200px;
+}
+.title_area hr{
+    width:994px;
+    margin-left: -380px;
+    margin-bottom: 80px;
+}
+#menu{
+    display: block;
+    position: relative;
+    top: -450px;
+    margin-left: 150px;
+}
+.pagination{
+    position: relative;
+    top: -200px;
+}
+.bbsList thead tr:first-child th {
+    border-top: 2px solid #505c78;
+}
+.bbsList thead th {
+    padding: 15px 10px;
+    background:#F7DFFE;
+    border-top: 1px dotted #8c92a3;
+    border-bottom: 1px solid #d2d7dc;
+    font-weight: 600;
+    color: #222;
+    font-size: 16px;
+}
+.bbsList td {
+    color: #3c3737;
+    word-break: break-all;
+    font-size: 16px;
+}
+
+.bbsList th, .bbsList td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eaecf1;
+    text-align: center;
+
+}
+#main-body{
+    background-color: #F7DDFF;
+}
+
+#menu .lnb > li > a {
+    display: block;
+    padding: 12px 40px 12px 10px;
+    font-size: 17px; 
+    color: #333;
+    border-bottom: solid 1px;
+    width: 70px;
+    
+}
+.subLnb{
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+    width: 120px;
+}
+.title_area{
+    margin-left: 650px;
+}
+.title_area span{
+    margin-left: 25px;
+}
+#sub_container_wrap{
+    background-color: #F7DDFF;
+}
+#sub_content{
+    background-color: #FBECFF;
+}
+.sub_content_wrap {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    min-height: 700px;
+}
+#sub_content{
+    position: relative;
+    top: 100px;
+    padding-top: 50px;
+}
+hr{
+    width:462px; 
+    border: 1px solid #707070;
+    margin-top:5px;  
+    margin-bottom: 5px;
+}
+p{
+    padding-bottom: 5px;
+}
+#Copyright{
+   display: inline-block;
+   margin-left: 350px;
+}
+#explain {
+    position: relative;
+    top: -20px;
+   display: inline-block;
+   margin-left: 200px;
+
+}
+#dis{
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right:275px;   
+}
+
+footer{
+    background-color: #DDB5E9;
+    height: 85px;
+}
