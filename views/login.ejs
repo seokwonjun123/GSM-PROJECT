@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Polio</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta
+      name="google-signin-client_id"
+      content="402646517390-cm9evvl2rkrpa7me2423c0d50rmq6imc.apps.googleusercontent.com"
+    />
+    <script>
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log("Name: " + profile.getName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
+      }
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log("User signed out.");
+        });
+        auth2.disconnect();
+      }
+    </script>
+  </head>
+  <body>
+    <%- include("header") %>
+    <main>
+      <div id="container" class="main_container">
+        <div class="login_container">
+          <div class="form_container">
+            <form name="login_form" action="/cookie" method="get">
+              <div class="form_title_div">
+                <p class="form_title_p">로그인</p>
+                <h2 class="form_title_t">To continue To polio</h2>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <h2 class="form_title_O">
+                  <img class="or" src="image/or.png" alt="or" />
+                </h2>
+                <div>
+                  <input
+                    type="text"
+                    name="id"
+                    placeholder="아이디"
+                    class="form_input"
+                  />
+                </div>
+                <div class="form_text_alert_padding">
+                  <div id="alert_email" class="form_text_alert"></div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="비밀번호"
+                    class="form_input"
+                  />
+                </div>
+                <div class="form_text_alert_padding">
+                  <div id="alert_password" class="form_text_alert"></div>
+                </div>
+              </div>
+              <div style="height: 10px"></div>
+              <div>
+                <button
+                  type="button"
+                  class="form_submit_button"
+                  onclick="login()"
+                >
+                  로그인
+                </button>
+              </div>
+              <div class="clear"></div>
+              <br />
+              <div>
+                <li><a href="#">아이디 찾기 |</a></li>
+                <li><a href="#"> 비밀번호 찾기 |</a></li>
+                <li><a href="#"> 회원가입</a></li>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include("footer") %>
+  </body>
+</html>

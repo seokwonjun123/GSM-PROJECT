@@ -2,16 +2,41 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Polio</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <%- include("header") %>
-        <main>
-            <div id="month">
-                <h3><b>December 2nd (12월 2주차)</b></h2>
+        <div id="main-body">
+            <div id="main">
+                <div id="calendarForm">
+                    <script src="index.js"></script>
+                    <img src = "image\color.png" alt="color" id="color">
+                </div>
+    
+                <div id="left-table">
+                    <table>
+                        <th><img src="image\link.png" alt="link"> </th>
+                    </table>
+                </div>
+            
+                <div id="right-table">
+                    <table>
+                        <th><img src="image\Hot Issue.png" alt="Hot Issue"><img src="image\1.png" alt="logo-photo" id="hot"></th>
+            
+                    </table>
+                </div>
+                
+                <div id="story">
+                    <p><b><h2>우리의 이야기</h2></b></p>
+                    <a href="#">더 보기</a>
+                </div>
+    
+    
             </div>
-        </main>
+        </div>
         <%- include("footer") %>
     </body>
 </html>

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-style: "Nanum Gothic", sans-serif;
+}
+body {
+	overflow-x: hidden;
+}
+header {
+	background-color: #fcf2ff;
+	display: flex;
+	justify-content: space-around;
+}
+.logo-name {
+	float: right;
+	margin-top: 17%;
+	color: #b718e7;
+}
+
+td {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	height: 278px;
+	width: 173px;
+	border: 1px solid #444444;
+}
+
+li {
+	list-style: none;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	width: 456px;
+}
+
+#login {
+	padding-top: 20px;
+}
+
+#class {
+	margin-left: 1.5vw;
+	padding-top: 20px;
+}
+
+a {
+	text-decoration-line: none;
+	color: black;
+}
+
+/*header -끝- */
+
+#month {
+	text-align: center;
+	padding-top: 20px;
+}
+#color{
+	margin-left: 750px;
+	margin-top : 18.5px
+}
+#main-body {
+	background-color: #f7ddff;
+	height: 850px;
+}
+h4 {
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+hr {
+	width: 462px;
+	border: 1px solid #707070;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+p {
+	padding-bottom: 5px;
+}
+#Copyright {
+	display: inline-block;
+	margin-left: 350px;
+	margin-top: 10px;
+}
+#explain {
+	position: relative;
+	top: -20px;
+	display: inline-block;
+	margin-left: 200px;
+}
+#dis {
+	display: inline-block;
+	margin-left: 450px;
+	margin-top: 10px;
+	margin-right: 275px;
+}
+#left-table {
+	padding-top: 300px;
+}
+#right-table{
+	height: 150px;
+}
+#left-table table {
+	border: solid 3px #6300a5;
+	width: 552px;
+	height: 397px;
+	margin-left: 400px;
+	margin-right: 82px;
+	position: relative;
+	top: 132px;
+}
+#right-table table {
+	border: solid 3px #6300a5;
+	width: 552px;
+	height: 397px;
+	position: relative;
+	left: 1100px;
+	bottom: 265px;
+}
+#left-table table th {
+	float: left;
+	padding-left: 20px;
+	padding-top: 17px;
+}
+#right-table table th {
+	float: left;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+#hot{
+	padding-bottom: 8px;
+	padding-left: 0;
+}
+#story {
+	background-color: #f2caff;
+	height: 500px;
+}
+#story b {
+	text-align: left;
+	margin-left: 342px;
+}
+#story a {
+	float: right;
+	margin-right: 280px;
+	margin-top: 380px;
+}
+footer {
+	margin-top: 482px;
+	background-color: #ddb5e9;
+	height: 130px;
+}
+.custom_calendar_table {
+	margin-top: 30px;
+	text-align: center;
+}
+.cal_date{
+	margin-top: 30px;
+}
+#custom_set_date{
+	margin-top: 30px;
+}
+
+#calendarForm {
+	position: absolute;
+	left: 20%;
+}
+
+/*삭제해도 됨*/
+.custom_calendar_table thead.cal_date th {
+	font-size: 1.5rem;
+}
+
+.custom_calendar_table thead.cal_date th button {
+	font-size: 1.5rem;
+	background: none;
+	border: none;
+}
+
+.custom_calendar_table thead.cal_week th {
+	background-color: #288cff;
+	color: #fff;
+}
+
+.custom_calendar_table tbody td {
+	cursor: pointer;
+}
+
+.custom_calendar_table tbody td:nth-child(1) {
+	color: red;
+}
+
+.custom_calendar_table tbody td:nth-child(7) {
+	color: #288cff;
+}
+
+.custom_calendar_table tbody td.select_day {
+	background-color: #288cff;
+	color: #fff;
+}
